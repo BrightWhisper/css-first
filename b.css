@@ -111,11 +111,11 @@ hr {
 }
 
 .userCard {
-    border: 1px solid red;
     max-width: 940px;
     margin-left: auto;
     margin-right: auto;
     background-color: #FFFFFF;
+    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.5);
 }
 
 .userCard .welcome {
@@ -192,11 +192,100 @@ hr {
 .userCard>footer.media>a {
     display: inline-block;
     border-radius: 50%;
-    width:40px;
+    width: 40px;
     line-height: 30px;
     padding: 5px 0;
-    margin: 16px 16px; 
+    margin: 16px 16px;
 }
+
 .userCard>footer.media>a:hover {
     background: #CF5D5F;
+}
+
+body>main {
+    margin-top: -350px;
+}
+
+body>main .downloadResume {
+    font-size: 14px;
+    line-height: 16px;
+    padding: 21px 15px;
+    display: inline-block;
+    border: 1px solid #CDCFD1;
+    background: #EFEFEF;
+    border-radius: 2px;
+    color: #3d4451;
+    font-weight: bold;
+    margin: 32px 0;
+    transition: box-shadow 0.3s;
+}
+
+body>main .downloadResume-wrapper {
+    text-align: center;
+}
+
+body>main .downloadResume:hover {
+    box-shadow: 0 4px 13px 0 rgba(0, 0, 0, 0.3);
+}
+
+body>main .selfIntroduction {
+    max-width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    line-height: 1.8;
+    font-size: 18px;
+    font-family: 'YouYuan';
+    font-weight: bold;
+}
+
+body>section.skills {
+    max-width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 60px;
+}
+
+body>section.skills>ol {
+    background: white;
+    list-style: none;
+    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.5);
+    padding: 42px 50px 10px;
+    margin-top: 30px;
+}
+
+body>section.skills>ol>li {
+    float: left;
+    width: 48%;
+    box-sizing: border-box;
+}
+body>section.skills>ol>li:nth-child(even) {
+    float:right;
+}
+body>section.skills>h2 {
+    text-align: center;
+    color: #3d4451;
+    font-size: 34px;
+    line-height: 1.2;
+    font-weight: 600;
+}
+body>section.skills h3 {
+    font-size: 14px;
+    line-height: 1.1;
+    padding-right: 40px;
+    font-weight: normal;
+}
+
+body>section.skills .progressBar {
+    height: 3px;
+    background: #FAE1E1;
+    border-radius: 2px;
+    margin: 4px 0 40px;
+}
+
+body>section.skills .progress {
+    height: 100%;
+    background: #e6686a;
+    width: 70%;
 }

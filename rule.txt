@@ -1,0 +1,18 @@
+图表：
+攻击事件排名   id:2d349a1afa0559f723d6f942813922fb
+攻击类型分布   id:a3ba30e465038ccbc4aa90c9254ea445
+风险类型分布   id:7c3c096af853c0842571ae5d784094eb
+攻击矩阵分布图 id:a99f248e98e0df6549c386dbcf1e46b5
+恶意代码攻击事件分布 id:8e46de9c36a6c0ab2e116f591e6278d1
+恶意代码类别分类 id:518184a7872ca739a3ae3f6c3e767994
+恶意代码感染热力图 id:ddac4ba5a993f157fd3eed6e171d9d1e
+恶意代码感染主机排名 id:2cdd852c5dfe07a2126afd4931acd251
+攻击类型统计 id:8c32e8b18b7a24ae25feddb1d083b851
+
+
+dashboard:
+默认dashboard    id：1
+入侵防御   id:ab8a562d213e0cce10670a77013d1ef8
+恶意代码  id:e3ff102b32dff4cdd2c50f33772026e8
+
+
