@@ -260,9 +260,11 @@ body>section.skills>ol>li {
     width: 48%;
     box-sizing: border-box;
 }
+
 body>section.skills>ol>li:nth-child(even) {
-    float:right;
+    float: right;
 }
+
 body>section.skills>h2 {
     text-align: center;
     color: #3d4451;
@@ -270,6 +272,7 @@ body>section.skills>h2 {
     line-height: 1.2;
     font-weight: 600;
 }
+
 body>section.skills h3 {
     font-size: 14px;
     line-height: 1.1;
@@ -288,4 +291,86 @@ body>section.skills .progress {
     height: 100%;
     background: #e6686a;
     width: 70%;
+    border-radius: 2px;
+}
+
+section.portfolio>h2 {
+    text-align: center;
+    color: #3d4451;
+    font-size: 34px;
+    line-height: 1.2;
+    font-weight: 600;
+}
+
+section.portfolio {
+    text-align: center;
+    max-width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 100px;
+}
+
+section.portfolio>nav>ol {
+    list-style: none;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+}
+
+section.portfolio>nav>ol>li {
+    float: left;
+    margin-left: 40px;
+    cursor: pointer;
+}
+
+section.portfolio>nav>ol>li:first-child {
+    margin-left: 0;
+}
+
+section.portfolio>nav {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 22px;
+}
+
+section.portfolio>nav .bar {
+    height: 5px;
+    background: white;
+    margin-top: 5px;
+    margin-bottom: 28px;
+    border-radius: 2px;
+}
+
+section.portfolio>nav .bar-inner {
+    height: 100%;
+    background: #e6686a;
+    border-radius: 2px;
+    transition: all 0.3s;
+}
+
+section.portfolio>nav .bar.state-1 .bar-inner {
+    margin-left: -2px;
+    width: 50px;
+}
+
+section.portfolio>nav .bar.state-2 .bar-inner {
+    margin-left: 65px;
+    width: 50px;
+}
+
+section.portfolio>nav .bar.state-3 .bar-inner {
+    margin-left: 140px;
+    ;
+    width: 96px;
+}
+
+section.portfolio .works {
+    position: relative;
+}
+
+section.portfolio .works>.big,
+section.portfolio .works>.small {
+    position: absolute;
 }
