@@ -64,6 +64,7 @@ hr {
 .topNavBar nav>ul>li {
     float: left;
     margin: 0 17px;
+    position: relative;
 }
 
 .topNavBar nav>ul>li>a {
@@ -74,10 +75,44 @@ hr {
     padding-bottom: 5px;
     display: block;
     color: inherit;
+    position: relative;
 }
 
-.topNavBar nav>ul>li>a:hover {
-    border-bottom: 3px solid #E06567;
+.topNavBar nav>ul>li>a:hover::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #e06567;
+    height: 3px;
+    animation: menuSlide 0.5s;
+}
+
+@keyframes menuSlide {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+.topNavBar .submenu {
+    list-style: none;
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%
+}
+
+.topNavBar .submenu.active {
+    display: block;
+}
+.topNavBar .submenu > li {
+    white-space: nowrap;
 }
 
 .topNavBar .logo {
