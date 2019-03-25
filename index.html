@@ -14,6 +14,7 @@
             height: 200px;
             position: relative;
         }
+
         .loading::before,
         .loading::after {
             content: '';
@@ -80,7 +81,7 @@
     <div id="siteWelcome" class="site-welcome active">
         <div class="loading"></div>
     </div>
-    <div class="topNavBar">
+    <div id="topNavBar" class="topNavBar">
         <div class="topNavBar-inner clearfix">
             <a class="logo" href="#" alt="logo">
                 <span class="rs">RS</span><span class="card">card</span>
@@ -237,9 +238,12 @@
         </div>
     </section>
     <script>
-        setTimeout(function(){
+        setTimeout(function () {
             siteWelcome.classList.remove('active');
-        },3000)
+        }, 1000);
+        window.onscroll = function (xx) {
+            window.scrollY > 0 ? topNavBar.classList.add('sticky') : topNavBar.classList.remove('sticky');
+        };
     </script>
 </body>
 
