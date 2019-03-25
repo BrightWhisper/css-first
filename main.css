@@ -13,14 +13,6 @@ a {
     padding: 0;
 }
 
-.icon {
-    width: 1em;
-    height: 1em;
-    vertical-align: -0.15em;
-    fill: currentColor;
-    overflow: hidden;
-}
-
 hr {
     height: 0;
     border: none;
@@ -362,7 +354,6 @@ section.portfolio>nav .bar.state-2 .bar-inner {
 
 section.portfolio>nav .bar.state-3 .bar-inner {
     margin-left: 140px;
-    ;
     width: 96px;
 }
 
