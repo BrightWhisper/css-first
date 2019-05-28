@@ -140,6 +140,7 @@ section.portfolio .swiper-button-next{
   background-color: white;
   width: 64px;
   height: 64px;
+  top: 55%;
   right: 100%;
   left: auto;
   border-radius: 50%;
